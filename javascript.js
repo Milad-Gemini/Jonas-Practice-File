@@ -1,3 +1,5 @@
+"use strict";
+
 /*
 ////////////////////////////////////
 // Linking a JavaScript File
@@ -294,7 +296,8 @@ if (scoreDolphins > scoreKoalas && scoreDolphins >= 100) {
   console.log("No one win the trophy !");
 }*/
 
-const day = "saturday";
+//video 29
+/*const day = "monday";
 
 switch (day) {
   case "monday": // day === 'monday'
@@ -318,3 +321,67 @@ switch (day) {
   default:
     console.log("not a vlid day!");
 }
+
+if (day === "monday") {
+  console.log("plan course stracture");
+  console.log("go to coding meetup");
+} else if (day === "tuesday") {
+  console.log("prepare theory videos");
+} else if (day === "wednesday" || day === "thursday") {
+  console.log("write code examples");
+} else if (day === "friday") {
+  console.log("record videos");
+} else if (day === "saturday" || day === "sunday") {
+  console.log("enjoy the weekend!");
+} else {
+  console.log("not a vlid day!");
+}*/
+
+// video 30
+/*3 + 4;
+1991;
+true && false && !false;
+
+const me = "milad";
+console.log(`I'm ${2037 - 1991} years old ${me}`);*/
+
+// video 31
+/*const age = 23;
+//age >= 18
+// ? console.log("I like to drink wine 🥂")
+// : console.log("I like to drink water 🫗");
+
+const drink = age >= 18 ? "wine 🥂" : "water 🫗";
+console.log(drink);
+
+let drink2;
+if (age >= 18) {
+  drink2 = "wine 🥂";
+} else {
+  drink2 = "water 🫗";
+}
+console.log(drink2);
+
+console.log(`I like to drink ${age >= 18 ? "wine 🥂" : "water 🫗"}`);*/
+
+// video 33
+/*const bill = 430;
+const tip = bill <= 300 && bill >= 50 ? bill * 0.15 : bill * 0.2;
+console.log(
+  `The bill was ${bill}, the tip was ${tip}, and the total value ${bill + tip}`
+);*/
+
+// video 34 & 35
+// Not special things
+
+// video 36
+/*let hasDriversLicense = false;
+const passTest = true;
+
+if (passTest) hasDriversLicense = true;
+if (hasDriversLicense) console.log("I can drive :D");
+
+//const interFace = "Audio";
+//const private = 534;*/
+
+//video 37
