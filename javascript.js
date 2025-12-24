@@ -384,4 +384,49 @@ if (hasDriversLicense) console.log("I can drive :D");
 //const interFace = "Audio";
 //const private = 534;*/
 
-//video 37
+//video 37  
+/*function logger () {
+  console.log('my name is milad');
+}
+
+// calling / running / invoking function
+logger();
+logger();
+logger();
+
+
+function fruitProcessor (apples, oranges) {
+  const juice = `juice with ${apples} apples and ${oranges} oranges.`;
+  return juice;
+}
+
+const applesjuice = fruitProcessor(5, 0);
+console.log(applesjuice);
+
+const appleOrangeJuice = fruitProcessor(2, 4);
+console.log(appleOrangeJuice);*/
+
+//video 38
+// function declaration
+/*function calcAge1(birthYear) {
+  return 2037 - birthYear;
+}
+const age1 = calcAge1(1991);
+
+// function expression
+const calcAge2 = function (birthYear) {
+  return 2037 - birthYear;
+}
+const age2 = calcAge2(1991);
+
+console.log(age1, age2);*/
+
+//video 39
+// function expression
+const calcAge2 = function (birthYear) {
+  return 2037 - birthYear;
+}
+
+// Arrow function
+const calcAge3 = birthYear => 2037 - birthYear;
+const age3 = calcAge3(1991);
