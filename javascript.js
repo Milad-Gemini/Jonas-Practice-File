@@ -384,7 +384,7 @@ if (hasDriversLicense) console.log("I can drive :D");
 //const interFace = "Audio";
 //const private = 534;*/
 
-//video 37  
+//video 37
 /*function logger () {
   console.log('my name is milad');
 }
@@ -500,8 +500,8 @@ scoreKoalas = calcAvarage(23, 34, 27);
 console.log(scoreDolphins, scoreKoalas);
 checkWinner(scoreDolphins, scoreKoalas);*/
 
-//video 44
-const friends = ['Michael' , 'steven' , 'peter'];
+//video 44 - arrays
+/*const friends = ["Michael", "steven", "peter"];
 console.log(friends);
 
 const years = new Array(1991, 1984, 2008, 2020);
@@ -512,25 +512,107 @@ console.log(friends[2]);
 console.log(friends.length);
 console.log(friends[friends.length - 1]);
 
-friends[2] = 'Jay';
+friends[2] = "Jay";
 console.log(friends);
 
-const firstName = 'jonas';
-const jonas = [firstName, 'moha', 2037 - 1991, 'teacher', friends];
+const firstName = "jonas";
+const jonas = [firstName, "moha", 2037 - 1991, "teacher", friends];
 console.log(jonas);
 console.log(jonas.length);
 
 // Exercise
 const calcAge = function (birthYear) {
   return 2037 - birthYear;
+};
+const years1 = [1990, 1967, 2002, 2010, 2018];
+
+const age1 = calcAge(years1[0]);
+const age2 = calcAge(years1[1]);
+const age3 = calcAge(years1[years1.length - 1]);
+console.log(age1, age2, age3);*/
+
+//video 45 - array methods
+/*const friends = ["Michael", "steven", "peter"];
+
+// Add elements
+const newLenght = friends.push("jay"); //به آخر اضافه میکنه
+console.log(friends);
+console.log(newLenght);
+
+friends.unshift("john"); //به اول اضافه میکنه
+console.log(friends);
+
+// Remove elements
+friends.pop(); //از آخر حذف میکنه
+console.log(friends);
+
+friends.shift(); //از اول حذف میکنه
+console.log(friends);
+
+console.log(friends.indexOf("steven")); //شماره طول المنت رو برمیگردونه(lenght)
+
+friends.push(23);
+console.log(friends.includes(23)); //این با true یا false برمیگردونه
+
+if (friends.includes("steven")) {
+  console.log("You have a friend called steven");
+}*/
+
+// video 47 - challenge
+/*const calcTip = function (bill) {
+  return bill >= 50 && bill <= 300 ? bill * 0.15 : bill * 0.2;
+};
+// Arrow function ↑
+//const calcTip = bill => bill >= 50 && bill <= 300 ? bill * 0.15 : bill * 0.2;
+
+const bills = [125, 555, 44];
+const tips = [calcTip(bills[0]), calcTip(bills[1]), calcTip(bills[2])];
+const totals = [bills[0] + tips[0], bills[1] + tips[1], bills[2] + tips[2]];
+console.log(bills, tips, totals);*/
+
+// video 48 - objects - part 1
+/*const milad = {
+  firstName: "milad",
+  lastName: "moha",
+  age: 2037 - 1991,
+  job: "development",
+};
+console.log(milad);*/
+
+// video 49 - dots vs bracket notation
+/*const milad = {
+  firstName: "milad",
+  lastName: "moha",
+  age: 2037 - 1991,
+  job: "development",
+  friends: ["hesam", "amir", "tahmoureth"],
+};
+console.log(milad);
+
+console.log(milad.lastName);
+console.log(milad["lastName"]);
+
+const nameKey = "Name";
+console.log(milad["first" + nameKey]);
+console.log(milad["last" + nameKey]);
+
+const intrestedIn = prompt(
+  "What do you want to know about milad? choose between firstName, lastName, age, job, and friends"
+);
+
+if (milad[intrestedIn]) {
+  console.log(milad[intrestedIn]);
+} else {
+  console.log("Wrong request!");
 }
-const years = [1990, 1967, 2002, 2010, 2018]
 
+milad.location = "Iran";
+milad["telegram"] = "@milad-gemini";
+console.log(milad);
 
+// challenge
+console.log(
+  `${milad.firstName} has ${milad.friends.length} friends, and his best friend is called ${milad.friends[0]}`
+);*/
 
-
-
-
-
-
-
+// video 50 - object methods
