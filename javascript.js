@@ -616,3 +616,89 @@ console.log(
 );*/
 
 // video 50 - object methods
+/*const milad = {
+  firstName: "milad",
+  lastName: "moha",
+  birthYear: 1991,
+  job: "development",
+  friends: ["hesam", "amir", "tahmoureth"],
+  hasDriverLicense: true,
+
+  //calcAge: function (birthYear) {
+  // return 2037 - birthYear;
+  //}, // method 1
+
+  //calcAge: function () {
+  // return 2037 - this.birthYear;
+  //}, // method 2
+
+  calcAge: function () {
+    this.age = 2037 - this.birthYear;
+    return this.age;
+  }, // method 3
+
+  // challenge
+  getSummary: function () {
+    return `${this.firstName} is a ${this.calcAge()} years old ${
+      this.job
+    }, and he has ${this.hasDriverLicense ? "a" : "no"} driver's license.`;
+  },
+};
+console.log(milad.calcAge());
+console.log(milad.getSummary());*/
+
+// video 52 - challenge
+/*const hesam = {
+  fullName: "Hesam Moh",
+  mass: 78,
+  height: 1.69,
+  calcBMI: function () {
+    this.bmi = this.mass / this.height ** 2;
+    return this.bmi;
+  },
+};
+
+const amir = {
+  fullName: "amir vah",
+  mass: 92,
+  height: 1.95,
+  calcBMI: function () {
+    this.bmi = this.mass / this.height ** 2;
+    return this.bmi;
+  },
+};
+
+hesam.calcBMI();
+amir.calcBMI();
+console.log(hesam.bmi);
+console.log(amir.bmi);
+
+if (hesam.bmi > amir.bmi) {
+  console.log(
+    `${hesam.fullName}'s BMI (${hesam.bmi}) is higher than ${amir.fullName}'s BMI (${amir.bmi})`
+  );
+} else if (amir.bmi > hesam.bmi) {
+  console.log(
+    `${amir.fullName}'s BMI (${amir.bmi}) is higher than ${hesam.fullName}'s BMI (${hesam.bmi})`
+  );
+}*/
+
+// video 53 - iteration the for loop
+// for loop keeps running while condition is TRUE
+/*for (let rep = 1; rep <= 10; rep++) {
+  console.log(`Lifting weights repetition ${rep} 😈 `);
+}*/
+
+//video 54 - looping arrays breaking
+const milad = [
+  "milad",
+  "moh",
+  2037 - 1991,
+  "development",
+  ["hesam", "amir", "tahmoureth"],
+  true,
+];
+
+for (let i = 0; i < milad.length; i++) {
+  console.log(milad[i], typeof milad[i]);
+}
