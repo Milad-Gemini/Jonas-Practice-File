@@ -689,7 +689,7 @@ if (hesam.bmi > amir.bmi) {
   console.log(`Lifting weights repetition ${rep} 😈 `);
 }*/
 
-//video 54 - looping arrays breaking
+//video 54 - looping arrays breaking and continue
 /*const milad = [
   "milad",
   "moh",
@@ -736,3 +736,31 @@ for (let i = 0; i < milad.length; i++) {
 
   console.log(milad[i], typeof milad[i]);
 }*/
+
+// video 55 - looping backwards amd loops in loops
+// lopping backward
+/*const milad = [
+  "milad",
+  "moh",
+  2037 - 1991,
+  "development",
+  ["hesam", "amir", "tahmoureth"],
+];
+
+// 0, 1, ..., 4
+// 4, 3, ..., 0
+
+for (let i = milad.length - 1; i >= 0; i--) {
+  console.log(milad[i]);
+}
+
+// loops in loops
+for (let exercise = 1; exercise < 4; exercise++) {
+  console.log(`------- Starting exercise ${exercise}`);
+
+  for (let rep = 1; rep < 6; rep++) {
+    console.log(`Exercise ${exercise} Lifting weight repetition ${rep}`);
+  }
+}*/
+
+// video 56 - the while loop
