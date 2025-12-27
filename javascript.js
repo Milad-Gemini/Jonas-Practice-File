@@ -764,3 +764,131 @@ for (let exercise = 1; exercise < 4; exercise++) {
 }*/
 
 // video 56 - the while loop
+//for (let rep = 1; rep <= 10; rep++) {
+//  console.log(`Lifting weight repetition ${rep}`);
+//}
+
+/*let rep = 1;
+while (rep <= 10) {
+  // console.log(`While: Lifting weight repetition ${rep}`);
+  rep++;
+}
+
+let dice = Math.trunc(Math.random() * 6) + 1;
+
+while (dice !== 6) {
+  console.log(`You rolled ${dice}`);
+  dice = Math.trunc(Math.random() * 6) + 1;
+  if (dice === 6) {
+    console.log("Loop is about to end ...");
+  }
+}*/
+
+// video 58 - challenge
+/*const calcTip = function (bill) {
+  return bill >= 50 && bill <= 300 ? bill * 0.15 : bill * 0.2;
+};
+const bills = [22, 295, 176, 440, 37, 105, 10, 1100, 86, 52];
+const tips = [];
+const totals = [];
+
+for (let i = 0; i < bills.length; i++) {
+  const tip = calcTip(bills[i]);
+  tips.push(tip);
+  totals.push(tip + bills[i]);
+}
+console.log(bills, tips, totals);
+
+const calcAvarage = function (arr) {
+  let sum = 0;
+  for (let i = 0; i < arr.length; i++) {
+    //sum = sum + arr[i];
+    sum += arr[i];
+  }
+  return sum / arr.length;
+};
+console.log(calcAvarage([2, 3, 7]));
+console.log(calcAvarage(totals));
+console.log(calcAvarage(tips));*/
+
+// video 59 - pathways and section roadmaps
+
+// video 61 - section intro
+
+// video 63 - prettier
+
+// video 64 - installing node js and setting up
+/*const x = "23";
+
+const calcAge = (birthYear) => 2037 - birthYear;
+console.log(calcAge(1991));*/
+
+// video 65 - learning how to code
+
+// video 66 - how to think like a developer
+
+// video 67 - ussing google stackoverflow and MDN
+/*// PROBLEM 1 :
+// We work for a compani building a smart home thermometer. our must recent task is this: "Given an array of temperatrures of one day, calculate the temperature amplitude. keep in mind that sometimes there might be a sensor eror."
+
+const temperatrures = [-3, -2, -6, -1, "eror", 9, 13, 17, 15, 14, 9, 5];
+
+//1) understanding the problem
+//- what is temp amplitude? Answer: difference between highest and l;owest temp
+//- How to compute max and min temperatures?
+//- What's a sensor eror? and what to do?
+//2) Breaking up into sub-problem
+//- How to ignore errors?
+//- Find max value in temp array
+//- Find min value in temp array
+//- Subtract min from max (amplitude) and return it
+
+const calcTempAmplitude = function (temps) {
+  let max = temps[0];
+  let min = temps[0];
+
+  for (let i = 0; i < temps.length; i++) {
+    const curTemp = temps[i];
+    if (typeof curTemp !== "number") continue;
+
+    if (curTemp > max) max = curTemp;
+    if (curTemp < min) min = curTemp;
+  }
+  console.log(max, min);
+  return max - min;
+};
+
+const amplitude = calcTempAmplitude(temperatrures);
+console.log(amplitude);
+
+// PROBLEM 2 :
+// Fumction shoul now receive 2 arrays of temps
+
+//1) Understand the problem
+//- With 2 arrays, should we implement functionality twice? NO! just merge two arrays
+
+//2) Breaking up into sub-problems
+//- Merge two arrays
+
+const calcTempAmplitudeNew = function (t1, t2) {
+  const temps = t1.concat(t2);
+  console.log(temps);
+
+  let max = temps[0];
+  let min = temps[0];
+
+  for (let i = 0; i < temps.length; i++) {
+    const curTemp = temps[i];
+    if (typeof curTemp !== "number") continue;
+
+    if (curTemp > max) max = curTemp;
+    if (curTemp < min) min = curTemp;
+  }
+  console.log(max, min);
+  return max - min;
+};
+
+const amplitudeNew = calcTempAmplitudeNew([3, 5, 1], [9, 0, 5]);
+console.log(amplitude);*/
+
+// video 68
