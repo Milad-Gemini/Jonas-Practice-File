@@ -690,7 +690,7 @@ if (hesam.bmi > amir.bmi) {
 }*/
 
 //video 54 - looping arrays breaking
-const milad = [
+/*const milad = [
   "milad",
   "moh",
   2037 - 1991,
@@ -699,6 +699,40 @@ const milad = [
   true,
 ];
 
+const types = [];
+
+//console.log(milad[0]);
+//console.log(milad[1]);
+//...
+//console.log(milad[4]);
+//milad 5 does NOT exist
+
 for (let i = 0; i < milad.length; i++) {
   console.log(milad[i], typeof milad[i]);
+  types.push(typeof milad[i]);
 }
+
+console.log(types);
+
+const years = [1991, 2007, 1969, 2020];
+const ages = [];
+
+for (let i = 0; i < years.length; i++) {
+  ages.push(2037 - years[i]);
+}
+console.log(ages);
+
+// continue and break
+console.log("--- ONLY STRINGS ---");
+for (let i = 0; i < milad.length; i++) {
+  if (typeof milad[i] !== "string") continue;
+
+  console.log(milad[i], typeof milad[i]);
+}
+
+console.log("--- BREAK WITH NUMBER ---");
+for (let i = 0; i < milad.length; i++) {
+  if (typeof milad[i] === "number") break;
+
+  console.log(milad[i], typeof milad[i]);
+}*/
