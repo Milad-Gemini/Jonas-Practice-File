@@ -868,7 +868,7 @@ console.log(amplitude);
 //- With 2 arrays, should we implement functionality twice? NO! just merge two arrays
 
 //2) Breaking up into sub-problems
-//- Merge two arrays
+//- Merge 2 arrays
 
 const calcTempAmplitudeNew = function (t1, t2) {
   const temps = t1.concat(t2);
@@ -889,6 +889,136 @@ const calcTempAmplitudeNew = function (t1, t2) {
 };
 
 const amplitudeNew = calcTempAmplitudeNew([3, 5, 1], [9, 0, 5]);
-console.log(amplitude);*/
+console.log(amplitudeNew);*/
 
-// video 68
+// video 68 - debugging
+
+//video 69 - debugging with th =e console
+/*const measureKelvin = function() {
+  const measurement = {
+    type: 'temp',
+    unit: 'celsius',
+
+    // c) FIXED
+    //value: Number(prompt('Degrees celsius:')),
+    value: 10,
+  };
+
+  // B) FIND
+  console.table(measurement);
+  
+  
+
+  //console.log(measurement.value);
+  //console.warn(measurement.value);
+  //console.error(measurement.value);
+  
+  const kelvin = measurement.value + 273;
+  return kelvin;
+};
+// A) IDENTIFY
+console.log(measureKelvin());
+
+
+// Using a debugger
+const calcTempAmplitudeBug = function (t1, t2) {
+  const temps = t1.concat(t2);
+  console.log(temps);
+
+  let max = 9;
+  let min = 0;
+
+  for (let i = 0; i < temps.length; i++) {
+    const curTemp = temps[i];
+    if (typeof curTemp !== "number") continue;
+
+    if (curTemp > max) max = curTemp;
+    if (curTemp < min) min = curTemp;
+  }
+  console.log(max, min);
+  return max - min;
+};
+
+const amplitudeBug = calcTempAmplitudeBug([3, 5, 1], [9, 0, 5]);
+// A) IDENTIFY
+console.log(amplitudeBug);*/
+
+
+// video 70 - challenge
+//1) Understand the problem
+//- Array transformed to string, separated by ...
+//- What the x days? Answer: index + 1
+
+//2) Breaking up into sub-problems
+//- Transform array into string
+//- Transform each element to string with °C
+//- String needs to continue day (index + 1)
+//- ad ... between elements and start and end of string
+//- Log string to console
+
+/*const data1 = [17, 21, 23];
+const data2 = [12, 5, -5, 0, 4];
+
+console.log(`... ${data1[0]}°C ... ${data1[1]}°C ... ${data1[2]}°C ...`);
+
+const printForecast = function(arr) {
+  let str = '';
+  for(let i = 0; i < arr.length; i++) {
+    str += `${arr[i]}°C in ${i + 1} days ... `;
+  }
+  console.log('... ' + str);
+  
+}
+printForecast(data1);*/
+
+
+// video 71 - rise of ai tools
+
+
+// video 72 - challenge with ai
+/*function analyzeWorkWeek(dailyHours) {
+  if (!Array.isArray(dailyHours)) {
+    throw new TypeError("Input must be an array");
+  }
+
+  if (dailyHours.length !== 7) {
+    throw new RangeError(
+      "dailyHours must contain exactly 7 values (Monday = index 0)"
+    );
+  }
+
+  // 1. Total hours worked
+  const totalHours = dailyHours.reduce((sum, hours) => sum + hours, 0);
+
+  // 4. Number of days worked (hours > 0)
+  const daysWorked = dailyHours.filter(hours => hours > 0).length;
+
+  // 2. Average daily hours (rounded to 1 decimal place)
+  const averageDailyHours =
+    daysWorked === 0 ? 0 : Number((totalHours / daysWorked).toFixed(1));
+
+  // 3. Day with the most hours worked (Monday = 0)
+  const maxHours = Math.max(...dailyHours);
+  const dayWithMostHours =
+    maxHours > 0 ? dailyHours.indexOf(maxHours) : null;
+
+  // 5. Full-time check (35 hours or more)
+  const isFullTime = totalHours >= 35;
+
+  return {
+    totalHours,
+    averageDailyHours,
+    dayWithMostHours,
+    daysWorked,
+    isFullTime
+  };
+}
+
+const weeklyHours = [7.5, 8, 6.5, 0, 8.5, 5, 0];
+const analysis = analyzeWorkWeek(weeklyHours);
+console.log(analysis);*/
+
+
+
+
+
